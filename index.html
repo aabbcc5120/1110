@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flower</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="223.css" rel="stylesheet">
+
+    
+</head>
+<body>
+    <header>
+<h1><a href="https://youtu.be/FXg4LXsg14s?si=fWGAEq7VFHCO0ZP4">你是我的花朵</a></h1>
+<h3>伍佰&China Blue</h3>
+<h2> 作詞：伍佰
+    &nbsp;&nbsp;&nbsp;
+                        作曲：伍佰</h2>
+        <nav>
+            <a href="next.html">• Bad Apple</a> &nbsp;&nbsp;&nbsp; • 你是我的花朵
+        </nav>
+    </header>
+    <main>
+        <p><span>前奏</span></p>
+        <p><span>留心腳步 看得清楚 有很多可疑的因素</span></p>
+        <p><span>呼喊妳 讓妳糊塗 考驗我愛的程度</span></p>
+        <br>
+        <p><span>高樓電梯 霓虹深處 舞動在人群很拘束</span></p>
+        <p><span>拉著我 不要飄走 我在妳背後擋風</span></p>
+        <br>
+        <p><span>喔～妳是我的花朵 我要擁有妳 插在我心窩</span></p>
+        <p><span>喔～妳是我的花朵 我要保護妳 一路都暢通</span></p>
+        <p><span>喔～妳是我的花朵 就算妳身邊 很多小石頭</span></p>
+        <p><span>喔～妳是我的花朵 我要愛著妳 不眠也不休</span></p>
+        <br>
+        <p><span>高樓電梯 霓虹深處 舞動在人群很拘束</span></p>
+        <p><span>拉著我 不要飄走 我在妳背後擋風</span></p>
+        <br>
+        <p><span>喔～妳是我的花朵 我要擁有妳 插在我心窩</span></p>
+        <p><span>喔～妳是我的花朵 我要保護妳 一路都暢通</span></p>
+        <p><span>喔～妳是我的花朵 就算妳身邊 很多小石頭</span></p>
+        <p><span>喔～妳是我的花朵 我要愛著妳 不眠也不休</span></p>
+        <br>
+        <p><span>不管妳心充滿多少困惑 我絕對不會 對愛妳放鬆</span></p>
+        <p><span>妳是我所有快樂源頭 我和妳將會 到達那開心樂園</span></p>
+        <br>
+        <p><span>喔～妳是我的花朵 我要擁有妳 插在我心窩</span></p>
+        <p><span>喔～妳是我的花朵 我要保護妳 一路都暢通</span></p>
+        <p><span>喔～妳是我的花朵 就算妳身邊 很多小石頭</span></p>
+        <p><span>喔～妳是我的花朵 我要愛著妳 不眠也不休</span></p>
+        <br>
+        <p><span>OVER</span></p>
+
+        <div class="acss" id="aaa">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FXg4LXsg14s?si=6Ed8DR3ol6d2BhU-" 
+            style="border: 1px solid black;"
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+            </iframe>
+        </div>
+         
+        <script>
+            const aaa = document.getElementById("aaa"); 
+            let click= false;
+            let startX, startY, initialX, initialY;
+    
+            aaa.addEventListener("mousedown", (event) => {
+                click = true;              
+                startX = event.clientX;         
+                startY = event.clientY;         
+                initialX = aaa.offsetLeft; 
+                initialY = aaa.offsetTop;  
+                event.preventDefault();         
+            });
+        
+            document.addEventListener("mousemove", (event) => {
+                if (click) {   
+                    const dx = event.clientX - startX;
+                    const dy = event.clientY - startY;  
+                    aaa.style.left = `${initialX + dx}px`;
+                    aaa.style.top = `${initialY + dy}px`;
+                }
+            });
+        
+            document.addEventListener("mouseup", (event) => {
+                click = false; 
+            });
+        </script>
+        
+    </main>
+    <footer>
+        <p>
+            <ul>
+             <a href="https://youtu.be/6DiKlXUpizE?si=QvY6oZE-1Gp4wKk2" style="color:crimson">youtube</a> 
+            </ul>
+         </p>
+        <p>作業用途，如有侵權請不要告我</p>
+    </footer>
+</body>
+</html>
